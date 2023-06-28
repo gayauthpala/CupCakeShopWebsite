@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--style sheet link-->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="php/contact.php">
+
+</head>
+<body>
+
+    <!--Nav Bar Start-->
+    <header class="header">
+        <section class="flex">
+
+            <a href="#home" class="logo"><img src="images/logo.avif" alt=""></a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#cart"><i class="fa fa-shopping-cart"></i></a>
+
+                <div id="menu-btn" class="dropdown">
+                    <a href="javascript:void(0)" class="fas fa-bars dropbtn"></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+<!--contact section-->
+<div class="heading">
+    <img src="images/heading-img.png" alt="">
+    <h3>Contact Us</h3>
+ </div>
+
+<section class="contact">
+    <div class="contact-form">
+        <form action="./php/contact.php" method="post">
+            <input type="" placeholder="Enter your name" name="Name" required>
+            <input type="email" id="Email" name="Email" placeholder="Enter a valid email address" required>
+            <textarea id="" name="Message" cols="30" rows="10" placeholder="Your message" required>
+
+            </textarea>
+            <input type="submit" name="send" value="Submit" class="btn">
+        </form>
+    </div>
+
+    <div class="contact-img">
+        <img src="images/contact.jpg">
+    </div>
+</section>
+
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online shop</h4>
+                <ul>
+                    <li><a href="#">Vannilla Cupcake</a></li>
+                    <li><a href="#">Chocolate Cupcake</a></li>
+                    <li><a href="#">Coffee Cupcake</a></li>
+                    <li><a href="#">Caramel Cupcake</a></li>
+                    <li><a href="#">Red Velvet Cupcake</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
